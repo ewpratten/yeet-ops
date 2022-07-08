@@ -12,6 +12,14 @@ This crate **requires** a nightly build of Rust.
 
 ## Usage
 
+Simply toss this in your `Cargo.toml` dependencies:
+
+```toml
+yeet-ops = "^1.0.0"
+```
+
+Then you are good to go!
+
 ```rust
 #![feature(yeet_expr)] // Needed!
 use yeet_ops::yeet;
@@ -21,8 +29,14 @@ fn test() -> Option<i32> {
     yeet!();
 }
 
+/// A function that yeets `Err(1)`
+fn test2() -> Result<String, i32> {
+    yeet!(1);
+}
+
 fn main() {
     // Did it yeet?
     assert_eq!(test(), None);
+    assert_eq!(test2(), Err(1));
 }
 ```
