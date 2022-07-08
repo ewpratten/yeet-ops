@@ -9,7 +9,7 @@ readme = "README.md"
 homepage = "https://github.com/ewpratten/yeet-ops"
 repository = "https://github.com/ewpratten/yeet-ops"
 license = "GPL-3.0"
-keywords = ["yeet", "do yeet", "macros"]
+keywords = ["yeet", "do-yeet", "macros"]
 categories = ["no-std", "development-tools"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
